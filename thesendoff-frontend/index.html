@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>News App</title>
+    <title>The Sendoff - Home & News Tools</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
@@ -24,19 +24,24 @@
     <div class="rounded-column rounded-column-4"></div>
 
     <div class="header">
-        <h1>News Link Generator 🔗</h1>
+        <h1>The Sendoff 🔊</h1>
     </div>
 
     <nav class="navbar">
-        <a href="index.html">Home</a>
-        <a href="newsletters.html">Newsletters</a>
-        <a href="news_app.html" class="active">News App</a>
-        <a href="contributors.html">Contributors</a>
-        <a href="about.html">About</a>
+        <a href="index.html" class="active" aria-label="Home">🏠 Home</a>
+        <a href="newsletters.html" aria-label="Newsletters">📰 Newsletters</a>
+        <a href="contributors.html" aria-label="Contributors">✍️ Contributors</a>
+        <a href="about.html" aria-label="About">ℹ️ About</a>
     </nav>
 
     <div class="container">
-        <h2>Quick Links to Top News Sites</h2>
+        <h2>Welcome to The Sendoff!</h2>
+        <p>This is the official archive for all our monthly publications. Explore our insights, analyses, and stories covering a range of topics. We strive to bring you clarity in a world of uncertainty.</p>
+        <p>Navigate through our sections using the menu above to find archived newsletters, learn about our contributors, or discover more about our mission.</p>
+    </div>
+
+    <div class="container mt-8"> <!-- Added margin-top for separation -->
+        <h2>Quick Links to Top News Sites 🔗</h2>
         <p>Explore some of the most prominent news sources in the United States by category. Click on any link to visit their website and stay informed.</p>
 
         <div class="news-category">
@@ -83,11 +88,11 @@
         </div>
 
         <div class="gemini-app-section">
-            <h2 class="mt-8">Ask Gemini</h2>
+            <h2 class="mt-8">Ask Gemini ✨</h2>
             <p>Enter a prompt below and get a response from the Gemini AI model.</p>
             <textarea id="gemini-prompt" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-accent1" rows="4" placeholder="e.g., 'Summarize recent global political developments in 100 words.'"></textarea>
-            <button id="send-prompt-btn" class="mt-4 w-full bg-accent1 text-light-text py-3 rounded-lg font-bold hover:bg-accent2 transition transform hover:-translate-y-1 shadow-md">
-                Send Prompt to Gemini
+            <button id="send-prompt-btn" class="mt-4 w-full bg-accent1 text-light-text py-3 rounded-lg font-bold hover:bg-accent2 transition transform hover:-translate-y-1 shadow-md" aria-label="Send Prompt to Gemini">
+                💬 Send Prompt
             </button>
             <div id="loading-indicator" class="hidden text-center mt-4 text-dark-text">
                 <p>Loading response from Gemini...</p>
@@ -97,7 +102,6 @@
                 <p class="text-gray-500">Your AI response will appear here.</p>
             </div>
         </div>
-
     </div>
 
     <div class="footer">
